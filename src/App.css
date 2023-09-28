@@ -6,6 +6,10 @@
   font-family: "Euclid Circular A", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .bg-color {
   background-color: #28293e;
   color: white;
@@ -21,8 +25,9 @@
   padding: 7px 25px;
 }
 
-#headingHero {
-  width: 60%;
+#imgHero {
+  position: absolute;
+  z-index: 2;
 }
 
 #headingHero h1 {
@@ -38,38 +43,6 @@
 
 #hero {
   height: 580px;
-}
-
-#imgHero {
-  width: 40%;
-}
-
-#imgHero img {
-  width: 500px;
-  height: auto;
-  z-index: 10;
-}
-
-#bgImgHero {
-  position: absolute;
-  left: 70%;
-  bottom: 40%;
-  width: 280px;
-  height: 280px;
-  border-radius: 100%;
-  background: #924fff;
-  filter: blur(50px);
-}
-
-#bgImgHero2 {
-  position: absolute;
-  left: 65%;
-  bottom: 19%;
-  width: 280px;
-  height: 280px;
-  border-radius: 100%;
-  background: #ff9ce3;
-  filter: blur(50px);
 }
 
 .input-container {
@@ -99,4 +72,9 @@
 
 #maintance {
   height: fit-content;
+}
+
+#imgMaintance {
+  width: 400px;
+  height: auto;
 }

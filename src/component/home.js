@@ -1,5 +1,6 @@
 import logo from "./img/logo.png";
-import imgHero from "./img/7450159.png";
+import imgHero from "./img/a.png";
+import imgHeroBg from "./img/circle.png";
 import mail from "./img/email.png";
 import maintaince from "./img/maintance.png";
 // AOS ANIMATED
@@ -39,10 +40,10 @@ let Home = () => {
 
 let Hero = () => {
   return (
-    <section id="hero" class="pt-10 flex">
+    <section id="hero" class="pt-10 flex justify-between">
       <div
         id="headingHero"
-        class="flex flex-col justify-center"
+        class="flex flex-col justify-center min-w-2xl"
         data-aos="fade-right"
         data-aos-duration="2000"
       >
@@ -64,14 +65,12 @@ let Hero = () => {
         </div>
       </div>
       <div
-        id="imgHero"
-        className="flex justify-center items-center mt-10 "
+        className="flex justify-end items-center max-w-md"
         data-aos="fade-left"
         data-aos-duration="2000"
       >
-        <img id="imgHero" src={imgHero} alt="" />
-        <span id="bgImgHero" className="flex-none"></span>
-        <span id="bgImgHero2" className="flex-none"></span>
+        <img id="imgHero" src={imgHero} alt="" className="max-w-md" />
+        <img src={imgHeroBg} alt="" className="max-w-lg" />
       </div>
     </section>
   );
@@ -80,13 +79,13 @@ let Hero = () => {
 let Content1 = () => {
   return (
     <section
-      className="py-32 flex flex-row"
+      className="py-28 flex flex-row"
       data-aos="fade-up"
       data-aos-duration="1500"
       data-aos-anchor-placement="top-center"
     >
       <div className="basis-1/3 text-center">
-        <h1 className="pb-4 text-xl font-bold">Project Plan</h1>
+        <h1 className="pb-4 text-3xl font-bold">Project Plan</h1>
         <p className="pb-8 px-10 text-sm">
           Culpa duis aute culpa sint consequat in nulla fugiat. Commodo eiusmod
           fugiat sit pariatur. Et culpa deserunt mollit ea laborum duis velit
@@ -95,7 +94,7 @@ let Content1 = () => {
         <button className="ms-5 btn-send">Send</button>
       </div>
       <div className="basis-1/3 text-center">
-        <h1 className="pb-4 text-xl font-bold">Project Plan</h1>
+        <h1 className="pb-4 text-3xl font-bold">Project Plan</h1>
         <p className="pb-8 px-10 text-sm">
           Culpa duis aute culpa sint consequat in nulla fugiat. Commodo eiusmod
           fugiat sit pariatur. Et culpa deserunt mollit ea laborum duis velit
@@ -104,7 +103,7 @@ let Content1 = () => {
         <button className="ms-5 btn-send">Send</button>
       </div>
       <div className="basis-1/3 text-center">
-        <h1 className="pb-4 text-xl font-bold">Project Plan</h1>
+        <h1 className="pb-4 text-3xl font-bold">Project Plan</h1>
         <p className="pb-8 px-10 text-sm">
           Culpa duis aute culpa sint consequat in nulla fugiat. Commodo eiusmod
           fugiat sit pariatur. Et culpa deserunt mollit ea laborum duis velit
@@ -118,14 +117,14 @@ let Content1 = () => {
 
 let Content2 = () => {
   return (
-    <section id="maintance" className="flex items-center">
+    <section id="maintance" className="pb-28 flex items-center">
       <div
         className="basis-3/5"
         data-aos="fade-right"
         data-aos-duration="1500"
-        data-aos-anchor-placement="top-center"
+        data-aos-anchor-placement="bottom-bottom"
       >
-        <h1 className="text-5xl font-medium">
+        <h1 className="text-5xl font-bold">
           We are solution for
           <br /> your maintance and bug.
         </h1>
@@ -139,12 +138,12 @@ let Content2 = () => {
         <button className="mt-5 btn-send">Send</button>
       </div>
       <div
-        className="basis-3/5"
+        className="basis-3/5 flex justify-end"
         data-aos="fade-left"
         data-aos-duration="1500"
-        data-aos-anchor-placement="top-center"
+        data-aos-anchor-placement="bottom-bottom"
       >
-        <img src={maintaince}></img>
+        <img id="imgMaintance" src={maintaince} className=""></img>
       </div>
     </section>
   );

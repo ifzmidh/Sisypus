@@ -3,7 +3,7 @@ import { Content1, Content2, Hero, Home } from "./component/home";
 function App() {
   return (
     <div className="App bg-color">
-      <section className="px-56">
+      <section className="container mx-auto px-24">
         <Home />
         <Hero />
         <Content1 />
