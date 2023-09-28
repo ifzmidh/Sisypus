@@ -2,12 +2,20 @@ import logo from "./img/logo.png";
 import imgHero from "./img/7450159.png";
 import mail from "./img/email.png";
 import maintaince from "./img/maintance.png";
+// AOS ANIMATED
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+AOS.init();
 const emailLogo = "Email";
 
 let Home = () => {
   return (
-    <header class="pt-9 flex flex-row justify-between items-center">
+    <header
+      class="pt-9 flex flex-row justify-between items-center"
+      data-aos="fade-down"
+      data-aos-duration="2000"
+    >
       <a href="">
         <img id="logo" src={logo} alt="" />
       </a>
@@ -31,8 +39,13 @@ let Home = () => {
 
 let Hero = () => {
   return (
-    <section id="hero" class="flex">
-      <div id="headingHero" class="flex flex-col justify-center">
+    <section id="hero" class="pt-10 flex">
+      <div
+        id="headingHero"
+        class="flex flex-col justify-center"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+      >
         <h1>
           Manage
           <br /> your personal <br />
@@ -50,18 +63,28 @@ let Hero = () => {
           <button className="ms-5 btn-send">Send</button>
         </div>
       </div>
-      <div id="imgHero" className="flex justify-center items-center mt-10">
+      <div
+        id="imgHero"
+        className="flex justify-center items-center mt-10 "
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <img id="imgHero" src={imgHero} alt="" />
+        <span id="bgImgHero" className="flex-none"></span>
+        <span id="bgImgHero2" className="flex-none"></span>
       </div>
-      <span id="bgImgHero" className="flex-none"></span>
-      <span id="bgImgHero2" className="flex-none"></span>
     </section>
   );
 };
 
 let Content1 = () => {
   return (
-    <section className="py-32 flex flex-row">
+    <section
+      className="py-32 flex flex-row"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-anchor-placement="center-center"
+    >
       <div className="basis-1/3 text-center">
         <h1 className="pb-4 text-xl font-bold">Project Plan</h1>
         <p className="pb-8 px-10 text-sm">
@@ -96,7 +119,12 @@ let Content1 = () => {
 let Content2 = () => {
   return (
     <section id="maintance" className="flex items-center">
-      <div className="basis-3/5">
+      <div
+        className="basis-3/5"
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        data-aos-anchor-placement="top-center"
+      >
         <h1 className="text-5xl font-medium">
           We are solution for
           <br /> your maintance and bug.
@@ -110,7 +138,12 @@ let Content2 = () => {
         </p>
         <button className="mt-5 btn-send">Send</button>
       </div>
-      <div className="basis-3/5">
+      <div
+        className="basis-3/5"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        data-aos-anchor-placement="top-center"
+      >
         <img src={maintaince}></img>
       </div>
     </section>
