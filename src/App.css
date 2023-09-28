@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Euclid Circular A", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.bg-color {
+  background-color: #28293e;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#logo {
+  max-height: 45px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-demo {
+  background-color: #f36;
+  border-radius: 7px;
+  padding: 7px 25px;
+}
+
+#headingHero {
+  width: 60%;
+}
+
+#headingHero h1 {
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 85px; /* 97.561% */
+}
+
+#headingHero p {
+  font-size: 17px;
+}
+
+#hero {
+  height: 580px;
+}
+
+#imgHero {
+  width: 40%;
+}
+
+#imgHero img {
+  width: auto;
+  height: 500px;
+  z-index: 10;
+}
+
+#bgImgHero {
+  position: absolute;
+  left: 70%;
+  bottom: 40%;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  background: #924fff;
+  filter: blur(50px);
+}
+
+#bgImgHero2 {
+  position: absolute;
+  left: 65%;
+  bottom: 19%;
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  background: #ff9ce3;
+  filter: blur(50px);
+}
+
+.input-container {
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.input-container img {
+  width: auto;
+  height: 30px;
+}
+
+.input-container input {
+  outline: none;
+  color: white;
+  background: none;
+  font-size: 14px;
+}
+
+.btn-send {
+  background-color: #f36;
+  border-radius: 7px;
+  padding: 5px 30px;
+}
+
+#maintance {
+  height: fit-content;
 }
