@@ -83,7 +83,7 @@ let Content1 = () => {
       className="py-32 flex flex-row"
       data-aos="fade-up"
       data-aos-duration="1500"
-      data-aos-anchor-placement="center-center"
+      data-aos-anchor-placement="top-center"
     >
       <div className="basis-1/3 text-center">
         <h1 className="pb-4 text-xl font-bold">Project Plan</h1>
