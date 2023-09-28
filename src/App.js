@@ -1,5 +1,5 @@
 import "./App.css";
-import { Content1, Content2, Hero, Home } from "./component/home";
+import { Content1, Content2, Hero, Home, Footer } from "./component/home";
 function App() {
   return (
     <div className="App bg-color">
@@ -9,6 +9,7 @@ function App() {
         <Content1 />
         <Content2 />
       </section>
+      <Footer />
     </div>
   );
 }
