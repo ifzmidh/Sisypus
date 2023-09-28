@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Sisypus/static/css/main.19dcab81.css",
-    "main.js": "/Sisypus/static/js/main.44af36fd.js",
-    "static/media/maintance.png": "/Sisypus/static/media/maintance.e230f93edc40b9a76780.png",
-    "static/media/7450159.png": "/Sisypus/static/media/7450159.19bb1fed0b843f993c4e.png",
+    "main.css": "/Sisypus/static/css/main.1b4101ea.css",
+    "main.js": "/Sisypus/static/js/main.8823f5ad.js",
+    "static/media/circle.png": "/Sisypus/static/media/circle.fd7061120d8b2bd9fc54.png",
+    "static/media/maintance.png": "/Sisypus/static/media/maintance.ff6c445191c579bcfc98.png",
+    "static/media/a.png": "/Sisypus/static/media/a.334dcb5c19cacd284c6c.png",
     "index.html": "/Sisypus/index.html",
-    "main.19dcab81.css.map": "/Sisypus/static/css/main.19dcab81.css.map",
-    "main.44af36fd.js.map": "/Sisypus/static/js/main.44af36fd.js.map"
+    "main.1b4101ea.css.map": "/Sisypus/static/css/main.1b4101ea.css.map",
+    "main.8823f5ad.js.map": "/Sisypus/static/js/main.8823f5ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.19dcab81.css",
-    "static/js/main.44af36fd.js"
+    "static/css/main.1b4101ea.css",
+    "static/js/main.8823f5ad.js"
   ]
 }
