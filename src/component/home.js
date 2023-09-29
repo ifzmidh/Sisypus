@@ -1,47 +1,7 @@
-import logo from "./img/logo.png";
 import imgHero from "./img/a.png";
 import imgHeroBg from "./img/circle.png";
 import mail from "./img/email.png";
 import maintaince from "./img/maintance.png";
-// AOS ANIMATED
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-let github = "https://github.com/ifzmidh";
-let instagram = "https://www.instagram.com/ifzmidh/";
-let facebook = "https://web.facebook.com/profile.php?id=100091963807465";
-let policy = "https://github.com/ifzmidh/Sisypus#readme";
-
-AOS.init();
-
-let Home = () => {
-  return (
-    <header
-      class="pt-9 flex flex-row justify-between items-center"
-      data-aos="fade-down"
-      data-aos-duration="2000"
-      id="hello"
-    >
-      <a href="#maintance">
-        <img id="logo" src={logo} alt="" />
-      </a>
-      <div>
-        <a href="#maintance" class="me-14 hover:text-red-400">
-          About
-        </a>
-        <a href="#maintance" class="me-14 hover:text-red-400">
-          Services
-        </a>
-        <a href="#maintance" class="me-14 hover:text-red-400">
-          Products
-        </a>
-        <button type="button" class="btn-demo mx-10">
-          Demo
-        </button>
-      </div>
-    </header>
-  );
-};
 
 let Hero = () => {
   return (
@@ -66,7 +26,9 @@ let Hero = () => {
             <img src={mail} className="me-2"></img>
             <input className="border-white" placeholder="Email" />
           </div>
-          <button className="ms-5 btn-send">Send</button>
+          <a href="/">
+            <button className="ms-5 btn-send">Send</button>
+          </a>
         </div>
       </div>
       <div
@@ -96,7 +58,9 @@ let Content1 = () => {
           fugiat sit pariatur. Et culpa deserunt mollit ea laborum duis velit
           ullamco laboris
         </p>
-        <button className="ms-5 btn-send">Send</button>
+        <a href="/">
+          <button className="ms-5 btn-send">Send</button>
+        </a>
       </div>
       <div className="basis-1/3 text-center">
         <h1 className="pb-4 text-3xl font-bold">Project Plan</h1>
@@ -105,9 +69,11 @@ let Content1 = () => {
           fugiat sit pariatur. Et culpa deserunt mollit ea laborum duis velit
           ullamco laboris
         </p>
-        <button href="#" className="ms-5 btn-send">
-          Send
-        </button>
+        <a href="/">
+          <button href="#" className="ms-5 btn-send">
+            Send
+          </button>
+        </a>
       </div>
       <div className="basis-1/3 text-center">
         <h1 className="pb-4 text-3xl font-bold">Project Plan</h1>
@@ -116,7 +82,9 @@ let Content1 = () => {
           fugiat sit pariatur. Et culpa deserunt mollit ea laborum duis velit
           ullamco laboris
         </p>
-        <button className="btn-send">Send</button>
+        <a href="/">
+          <button className="btn-send">Send</button>
+        </a>
       </div>
     </section>
   );
@@ -142,7 +110,9 @@ let Content2 = () => {
           veniam aute excepteur et nisi. Reprehenderit incididunt officia dolor
           commodo exercitation in amet mollit.
         </p>
-        <button className="mt-5 btn-send">Send</button>
+        <a href="/">
+          <button className="mt-5 btn-send">Send</button>
+        </a>
       </div>
       <div
         className="basis-3/5 flex justify-end"
@@ -156,37 +126,4 @@ let Content2 = () => {
   );
 };
 
-let Footer = () => {
-  return (
-    <footer className="container px-24 bg-color-sec h-28 flex justify-between items-center font-light border-t-2 border-slate-500 text-slate-500">
-      <div className="flex flex-row">
-        <p className="pe-5">Copyright © 2023 Ifzmidh Dev Inc.</p>
-        <a
-          href={policy}
-          className="ps-5 border-s-2 border-slate-500 hover:text-slate-400"
-        >
-          Trademark Policy
-        </a>
-      </div>
-      <div className="flex flex-row">
-        <a href={instagram} className="pe-5 hover:text-slate-400">
-          Instagram
-        </a>
-        <a
-          href={github}
-          className="px-5 border-s-2 border-slate-500 hover:text-slate-400"
-        >
-          Github
-        </a>
-        <a
-          href={facebook}
-          className="px-5 border-s-2 border-slate-500 hover:text-slate-400"
-        >
-          Facebook
-        </a>
-      </div>
-    </footer>
-  );
-};
-
-export { Home, Hero, Content1, Content2, Footer };
+export { Hero, Content1, Content2 };
