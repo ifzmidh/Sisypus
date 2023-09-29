@@ -4,6 +4,7 @@
 
 * {
   font-family: "Euclid Circular A", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -47,7 +48,7 @@ body {
 
 .input-container {
   width: 200px;
-  border: 1px solid white;
+  border: 1px solid rgb(100 116 139);
   border-radius: 10px;
   padding: 5px 10px;
 }

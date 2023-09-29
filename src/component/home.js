@@ -7,8 +7,12 @@ import maintaince from "./img/maintance.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+let github = "https://github.com/ifzmidh";
+let instagram = "https://www.instagram.com/ifzmidh/";
+let facebook = "https://web.facebook.com/profile.php?id=100091963807465";
+let policy = "https://github.com/ifzmidh/Sisypus#readme";
+
 AOS.init();
-const emailLogo = "Email";
 
 let Home = () => {
   return (
@@ -16,18 +20,19 @@ let Home = () => {
       class="pt-9 flex flex-row justify-between items-center"
       data-aos="fade-down"
       data-aos-duration="2000"
+      id="hello"
     >
-      <a href="">
+      <a href="#maintance">
         <img id="logo" src={logo} alt="" />
       </a>
       <div>
-        <a href="#" class="me-14">
+        <a href="#maintance" class="me-14 hover:text-red-400">
           About
         </a>
-        <a href="#" class="me-14">
+        <a href="#maintance" class="me-14 hover:text-red-400">
           Services
         </a>
-        <a href="#" class="me-14 ">
+        <a href="#maintance" class="me-14 hover:text-red-400">
           Products
         </a>
         <button type="button" class="btn-demo mx-10">
@@ -57,9 +62,9 @@ let Hero = () => {
           And make your mood is happy with bored day, SHUT THE FUCK U!
         </p>
         <div className="mt-10 mb-5 flex flex-row">
-          <div class="input-container flex flex-row">
+          <div class="input-container hover:border-white border-slate flex flex-row">
             <img src={mail} className="me-2"></img>
-            <input defaultValue={emailLogo} />
+            <input className="border-white" placeholder="Email" />
           </div>
           <button className="ms-5 btn-send">Send</button>
         </div>
@@ -100,7 +105,9 @@ let Content1 = () => {
           fugiat sit pariatur. Et culpa deserunt mollit ea laborum duis velit
           ullamco laboris
         </p>
-        <button className="ms-5 btn-send">Send</button>
+        <button href="#" className="ms-5 btn-send">
+          Send
+        </button>
       </div>
       <div className="basis-1/3 text-center">
         <h1 className="pb-4 text-3xl font-bold">Project Plan</h1>
@@ -143,7 +150,7 @@ let Content2 = () => {
         data-aos-duration="1500"
         data-aos-anchor-placement="bottom-bottom"
       >
-        <img id="imgMaintance" src={maintaince} className=""></img>
+        <img id="imgMaintance" src={maintaince}></img>
       </div>
     </section>
   );
@@ -154,13 +161,29 @@ let Footer = () => {
     <footer className="container px-24 bg-color-sec h-28 flex justify-between items-center font-light border-t-2 border-slate-500 text-slate-500">
       <div className="flex flex-row">
         <p className="pe-5">Copyright © 2023 Ifzmidh Dev Inc.</p>
-        <p className="ps-5 border-s-2 border-slate-500">Trademark Policy</p>
+        <a
+          href={policy}
+          className="ps-5 border-s-2 border-slate-500 hover:text-slate-400"
+        >
+          Trademark Policy
+        </a>
       </div>
       <div className="flex flex-row">
-        <p className="pe-5">Instagram</p>
-        <p className="px-5 border-s-2 border-slate-500">Github</p>
-        <p className="px-5 border-s-2 border-slate-500">Whatsapp</p>
-        <p className="px-5 border-s-2 border-slate-500">Facebook</p>
+        <a href={instagram} className="pe-5 hover:text-slate-400">
+          Instagram
+        </a>
+        <a
+          href={github}
+          className="px-5 border-s-2 border-slate-500 hover:text-slate-400"
+        >
+          Github
+        </a>
+        <a
+          href={facebook}
+          className="px-5 border-s-2 border-slate-500 hover:text-slate-400"
+        >
+          Facebook
+        </a>
       </div>
     </footer>
   );
